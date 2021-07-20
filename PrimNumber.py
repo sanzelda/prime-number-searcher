@@ -11,7 +11,7 @@ def brutePrimes():
 
     #opens a file Primes.txt to write the prime numbers to
     with open('Primes.txt', 'w') as numFile:
-
+        numFile.write('Prime numbers from {} to {}: \n'.format(startAt, upTo))
         #loops through all the numbers
         for num in range(startAt ,upTo+1):
             prime = True
